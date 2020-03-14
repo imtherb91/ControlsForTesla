@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Vehicle" representedClassName="Vehicle" syncable="YES" codeGenerationType="class">
+        <attribute name="battery_level" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="battery_range" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="charge_port_door_open" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="charging_state" optional="YES" attributeType="String"/>
+        <attribute name="display_name" optional="YES" attributeType="String"/>
+        <attribute name="driver_temp_setting" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="exterior_color" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="inside_temp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="is_climate_on" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="last_updated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="locked" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="outside_temp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="passenger_temp_setting" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vehicle_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vin" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Vehicle" positionX="-63" positionY="-18" width="128" height="283"/>
+    </elements>
+</model>

@@ -1,0 +1,1481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A2F7A2723F22692001DCCDB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A2623F22692001DCCDB /* SettingsView.swift */; };
+		5A2F7A2923F2269B001DCCDB /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A2823F2269B001DCCDB /* SettingsViewModel.swift */; };
+		5A2F7A2B23F226A6001DCCDB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A2A23F226A6001DCCDB /* LoadingView.swift */; };
+		5A2F7A2D23F226B8001DCCDB /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A2C23F226B8001DCCDB /* VehicleView.swift */; };
+		5A2F7A2F23F226C2001DCCDB /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A2E23F226C2001DCCDB /* VehicleViewModel.swift */; };
+		5A2F7A3123F226CE001DCCDB /* HVACView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A3023F226CE001DCCDB /* HVACView.swift */; };
+		5A2F7A3323F226D8001DCCDB /* HVACViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A3223F226D8001DCCDB /* HVACViewModel.swift */; };
+		5A2F7A3523F226F8001DCCDB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A3423F226F8001DCCDB /* LoginView.swift */; };
+		5A2F7A3723F22705001DCCDB /* VehiclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A3623F22705001DCCDB /* VehiclesView.swift */; };
+		5A2F7A3A23F227CD001DCCDB /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A3923F227CD001DCCDB /* AuthState.swift */; };
+		5A2F7A3B23F227D5001DCCDB /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A3923F227CD001DCCDB /* AuthState.swift */; };
+		5A2F7A3D23F2367A001DCCDB /* VehicleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A3C23F2367A001DCCDB /* VehicleRowView.swift */; };
+		5A2F7A3F23F24F05001DCCDB /* LabelValueRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A3E23F24F05001DCCDB /* LabelValueRowView.swift */; };
+		5A2F7A4423F3785F001DCCDB /* NetworkActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A4323F3785F001DCCDB /* NetworkActivityModel.swift */; };
+		5A2F7A4623F385CF001DCCDB /* Wake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A4523F385CF001DCCDB /* Wake.swift */; };
+		5A2F7A4723F385D4001DCCDB /* Wake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A4523F385CF001DCCDB /* Wake.swift */; };
+		5A2F7A4823F38FFA001DCCDB /* Controls for Tesla.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5A6B10C623ECC844004A6F4D /* Controls for Tesla.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5A4CB7F024146EA200C2C191 /* VehiclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4CB7EF24146EA200C2C191 /* VehiclesViewModel.swift */; };
+		5A4CB7F22414724200C2C191 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4CB7F12414724200C2C191 /* LoginViewModel.swift */; };
+		5A4CB7F42415473600C2C191 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4CB7F32415473600C2C191 /* NetworkTests.swift */; };
+		5A4CB7F824168CBB00C2C191 /* VehiclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4CB7EF24146EA200C2C191 /* VehiclesViewModel.swift */; };
+		5A503888240DF39D00A1E807 /* NavigationButtonLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A503887240DF39D00A1E807 /* NavigationButtonLink.swift */; };
+		5A50388B240F085B00A1E807 /* ChangeAppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50388A240F085B00A1E807 /* ChangeAppIconView.swift */; };
+		5A50388D240F086900A1E807 /* ChangeAppIconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50388C240F086900A1E807 /* ChangeAppIconModel.swift */; };
+		5A50388F240F11B900A1E807 /* ChangeAppIconRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50388E240F11B900A1E807 /* ChangeAppIconRowView.swift */; };
+		5A503896240F3D8200A1E807 /* AppIcon2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A503894240F3D8200A1E807 /* AppIcon2@3x.png */; };
+		5A503897240F3D8200A1E807 /* AppIcon2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A503895240F3D8200A1E807 /* AppIcon2@2x.png */; };
+		5A50389A240F4C6200A1E807 /* AppIconButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A503899240F4C6200A1E807 /* AppIconButtonView.swift */; };
+		5A50389C240F4CEB00A1E807 /* AppIconItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50389B240F4CEB00A1E807 /* AppIconItem.swift */; };
+		5A50389E240FFCBE00A1E807 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50389D240FFCBE00A1E807 /* Icon.swift */; };
+		5A5E331D24004AB600710C96 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5E331C24004AB600710C96 /* Colors.xcassets */; };
+		5A5E331E24004AB600710C96 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A5E331C24004AB600710C96 /* Colors.xcassets */; };
+		5A6B10CD23ECC844004A6F4D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6B10CB23ECC844004A6F4D /* Interface.storyboard */; };
+		5A6B10CF23ECC849004A6F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A6B10CE23ECC849004A6F4D /* Assets.xcassets */; };
+		5A6B10D623ECC84A004A6F4D /* Controls for Tesla WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A6B10D523ECC84A004A6F4D /* Controls for Tesla WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5A6B10DB23ECC84A004A6F4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B10DA23ECC84A004A6F4D /* ContentView.swift */; };
+		5A6B10DD23ECC84A004A6F4D /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B10DC23ECC84A004A6F4D /* HostingController.swift */; };
+		5A6B10DF23ECC84A004A6F4D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B10DE23ECC84A004A6F4D /* ExtensionDelegate.swift */; };
+		5A6B10E123ECC84A004A6F4D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B10E023ECC84A004A6F4D /* NotificationController.swift */; };
+		5A6B10E323ECC84A004A6F4D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B10E223ECC84A004A6F4D /* NotificationView.swift */; };
+		5A6B10E523ECC84A004A6F4D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B10E423ECC84A004A6F4D /* ComplicationController.swift */; };
+		5A6B10E723ECC84A004A6F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A6B10E623ECC84A004A6F4D /* Assets.xcassets */; };
+		5A6B10EA23ECC84A004A6F4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A6B10E923ECC84A004A6F4D /* Preview Assets.xcassets */; };
+		5A6B10FD23ECCD63004A6F4D /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B10FB23ECCD63004A6F4D /* KeychainItemAccessibility.swift */; };
+		5A6B10FE23ECCD63004A6F4D /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B10FC23ECCD63004A6F4D /* KeychainWrapper.swift */; };
+		5A6B110723ECCF8A004A6F4D /* TeslaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B110423ECCF8A004A6F4D /* TeslaAPI.swift */; };
+		5A6B110D23ECCF9A004A6F4D /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B110A23ECCF9A004A6F4D /* NetworkResponse.swift */; };
+		5A6B110E23ECCF9A004A6F4D /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B110B23ECCF9A004A6F4D /* OAuth.swift */; };
+		5A6B110F23ECCF9A004A6F4D /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B110C23ECCF9A004A6F4D /* NetworkRequest.swift */; };
+		5A6B111223ECD131004A6F4D /* SecureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B111123ECD131004A6F4D /* SecureData.swift */; };
+		5A6B111423ECDAA6004A6F4D /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B111323ECDAA6004A6F4D /* Debug.swift */; };
+		5A6B111923ECDD61004A6F4D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B111823ECDD61004A6F4D /* LoginView.swift */; };
+		5A6B111B23ECDE8E004A6F4D /* VehiclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B111A23ECDE8E004A6F4D /* VehiclesView.swift */; };
+		5A6B111D23ECE531004A6F4D /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B111C23ECE531004A6F4D /* VehicleView.swift */; };
+		5A6B111F23ECE55E004A6F4D /* VehicleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B111E23ECE55E004A6F4D /* VehicleRowView.swift */; };
+		5A6B112123ECF5A6004A6F4D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B112023ECF5A6004A6F4D /* NetworkService.swift */; };
+		5A6B112323EE51A3004A6F4D /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B112223EE51A3004A6F4D /* Vehicle.swift */; };
+		5A6B112C23EF053D004A6F4D /* VehiclesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B112B23EF053D004A6F4D /* VehiclesList.swift */; };
+		5A6B113323EF0698004A6F4D /* VehicleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B113223EF0698004A6F4D /* VehicleData.swift */; };
+		5A6B113623EF3F9C004A6F4D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B113423EF3F9C004A6F4D /* Model.xcdatamodeld */; };
+		5A6B113923EF412D004A6F4D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B113823EF412D004A6F4D /* CoreDataManager.swift */; };
+		5A6B113B23EF4157004A6F4D /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B113A23EF4157004A6F4D /* CoreDataHelper.swift */; };
+		5A6B113D23EF4241004A6F4D /* Vehicle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B113C23EF4241004A6F4D /* Vehicle+Extensions.swift */; };
+		5A6B114323EF6B02004A6F4D /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B114223EF6B02004A6F4D /* Command.swift */; };
+		5A6B114623F04932004A6F4D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B114523F04932004A6F4D /* LoadingView.swift */; };
+		5A6B114923F075C1004A6F4D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B114823F075C1004A6F4D /* SettingsView.swift */; };
+		5A6B114B23F088C1004A6F4D /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B114A23F088C1004A6F4D /* Logout.swift */; };
+		5A6B114D23F08B31004A6F4D /* HttpStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B114C23F08B31004A6F4D /* HttpStatus.swift */; };
+		5A6B115023F0AD3F004A6F4D /* HVACView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B114F23F0AD3F004A6F4D /* HVACView.swift */; };
+		5A6B115223F0BEA0004A6F4D /* HVACViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B115123F0BEA0004A6F4D /* HVACViewModel.swift */; };
+		5A6B115423F0D0AA004A6F4D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B115323F0D0AA004A6F4D /* SettingsViewModel.swift */; };
+		5A6C0B382406024F0091D16A /* ControlButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C0B372406024F0091D16A /* ControlButtonView.swift */; };
+		5A6C92AB24045DB100151CE4 /* AddLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6C92A924045DB100151CE4 /* AddLines.swift */; };
+		5A864CF523FADCF100B7B955 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A864CF423FADCF100B7B955 /* Date+Extensions.swift */; };
+		5AA5731223F1D2A4000BBF85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5731123F1D2A4000BBF85 /* AppDelegate.swift */; };
+		5AA5731423F1D2A4000BBF85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5731323F1D2A4000BBF85 /* SceneDelegate.swift */; };
+		5AA5731623F1D2A4000BBF85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5731523F1D2A4000BBF85 /* ContentView.swift */; };
+		5AA5731823F1D2A8000BBF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA5731723F1D2A8000BBF85 /* Assets.xcassets */; };
+		5AA5731B23F1D2A8000BBF85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA5731A23F1D2A8000BBF85 /* Preview Assets.xcassets */; };
+		5AA5731E23F1D2A8000BBF85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA5731C23F1D2A8000BBF85 /* LaunchScreen.storyboard */; };
+		5AA5732923F1D2A8000BBF85 /* Key_for_Tesla_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5732823F1D2A8000BBF85 /* Key_for_Tesla_Tests.swift */; };
+		5AA5733423F1D2A8000BBF85 /* Key_for_Tesla_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5733323F1D2A8000BBF85 /* Key_for_Tesla_UITests.swift */; };
+		5AA5734E23F1E2C8000BBF85 /* VehiclesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B112B23EF053D004A6F4D /* VehiclesList.swift */; };
+		5AA5734F23F1E2C8000BBF85 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B110B23ECCF9A004A6F4D /* OAuth.swift */; };
+		5AA5735223F1E2C8000BBF85 /* VehicleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B113223EF0698004A6F4D /* VehicleData.swift */; };
+		5AA5735523F1E2C8000BBF85 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B114223EF6B02004A6F4D /* Command.swift */; };
+		5AA5735623F1E2C8000BBF85 /* SecureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B111123ECD131004A6F4D /* SecureData.swift */; };
+		5AA5735723F1E2C8000BBF85 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B110C23ECCF9A004A6F4D /* NetworkRequest.swift */; };
+		5AA5735823F1E2C8000BBF85 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B110A23ECCF9A004A6F4D /* NetworkResponse.swift */; };
+		5AA5735923F1E2C8000BBF85 /* TeslaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B110423ECCF8A004A6F4D /* TeslaAPI.swift */; };
+		5AA5735A23F1E2C8000BBF85 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B112023ECF5A6004A6F4D /* NetworkService.swift */; };
+		5AA5735B23F1E2C8000BBF85 /* HttpStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B114C23F08B31004A6F4D /* HttpStatus.swift */; };
+		5AA5735C23F1E2D7000BBF85 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B10FB23ECCD63004A6F4D /* KeychainItemAccessibility.swift */; };
+		5AA5735D23F1E2D7000BBF85 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B10FC23ECCD63004A6F4D /* KeychainWrapper.swift */; };
+		5AA5735E23F1E2E9000BBF85 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B113823EF412D004A6F4D /* CoreDataManager.swift */; };
+		5AA5735F23F1E2E9000BBF85 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B113A23EF4157004A6F4D /* CoreDataHelper.swift */; };
+		5AA5736023F1E2E9000BBF85 /* Vehicle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B113C23EF4241004A6F4D /* Vehicle+Extensions.swift */; };
+		5AA5736123F1E2ED000BBF85 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B113423EF3F9C004A6F4D /* Model.xcdatamodeld */; };
+		5AA5736223F1E4A2000BBF85 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B111323ECDAA6004A6F4D /* Debug.swift */; };
+		5AA5736323F1E4B8000BBF85 /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B114A23F088C1004A6F4D /* Logout.swift */; };
+		5AA6774D23FF1A0B00F19CFF /* ControlButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6774C23FF1A0B00F19CFF /* ControlButtonView.swift */; };
+		5AA6774F23FF205C00F19CFF /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA6774E23FF205C00F19CFF /* SectionHeaderView.swift */; };
+		5AC2968123FD8F41000961D4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC2968023FD8F41000961D4 /* OnboardingView.swift */; };
+		5AC2968423FDA60B000961D4 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC2968323FDA60B000961D4 /* ContentViewModel.swift */; };
+		5ADA610723FAEA86006BEBBE /* Trunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA610623FAEA86006BEBBE /* Trunk.swift */; };
+		5ADA610823FAEA86006BEBBE /* Trunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA610623FAEA86006BEBBE /* Trunk.swift */; };
+		5ADA610923FAF506006BEBBE /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A2E23F226C2001DCCDB /* VehicleViewModel.swift */; };
+		5ADA610A23FAF616006BEBBE /* NetworkActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A4323F3785F001DCCDB /* NetworkActivityModel.swift */; };
+		5ADA610B23FAF63A006BEBBE /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A864CF423FADCF100B7B955 /* Date+Extensions.swift */; };
+		5ADA610C23FB0110006BEBBE /* LabelValueRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F7A3E23F24F05001DCCDB /* LabelValueRowView.swift */; };
+		5ADA610D23FB07AE006BEBBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA5731723F1D2A8000BBF85 /* Assets.xcassets */; };
+		5ADA611023FB4762006BEBBE /* VehicleStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA610F23FB4762006BEBBE /* VehicleStateView.swift */; };
+		5ADA611123FB4762006BEBBE /* VehicleStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA610F23FB4762006BEBBE /* VehicleStateView.swift */; };
+		5ADA611323FB4CDA006BEBBE /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA611223FB4CDA006BEBBE /* Color+Extensions.swift */; };
+		5ADA611423FB4CDA006BEBBE /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA611223FB4CDA006BEBBE /* Color+Extensions.swift */; };
+		5AE2554F241176AD00E0F510 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE2554C2411562B00E0F510 /* LoginTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A2F7A4923F38FFA001DCCDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A6B10BC23ECC844004A6F4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A6B10C523ECC844004A6F4D;
+			remoteInfo = "Key for Tesla WatchKit App";
+		};
+		5A6B10D723ECC84A004A6F4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A6B10BC23ECC844004A6F4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A6B10D423ECC84A004A6F4D;
+			remoteInfo = "Key for Tesla WatchKit Extension";
+		};
+		5AA5732523F1D2A8000BBF85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A6B10BC23ECC844004A6F4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA5730E23F1D2A4000BBF85;
+			remoteInfo = "Key for Tesla Purchases";
+		};
+		5AA5733023F1D2A8000BBF85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A6B10BC23ECC844004A6F4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA5730E23F1D2A4000BBF85;
+			remoteInfo = "Key for Tesla Purchases";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A2F7A4B23F38FFA001DCCDB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5A2F7A4823F38FFA001DCCDB /* Controls for Tesla.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6B10F223ECC84A004A6F4D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5A6B10D623ECC84A004A6F4D /* Controls for Tesla WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A2F7A2623F22692001DCCDB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5A2F7A2823F2269B001DCCDB /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		5A2F7A2A23F226A6001DCCDB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5A2F7A2C23F226B8001DCCDB /* VehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleView.swift; sourceTree = "<group>"; };
+		5A2F7A2E23F226C2001DCCDB /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
+		5A2F7A3023F226CE001DCCDB /* HVACView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVACView.swift; sourceTree = "<group>"; };
+		5A2F7A3223F226D8001DCCDB /* HVACViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVACViewModel.swift; sourceTree = "<group>"; };
+		5A2F7A3423F226F8001DCCDB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5A2F7A3623F22705001DCCDB /* VehiclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesView.swift; sourceTree = "<group>"; };
+		5A2F7A3923F227CD001DCCDB /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		5A2F7A3C23F2367A001DCCDB /* VehicleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRowView.swift; sourceTree = "<group>"; };
+		5A2F7A3E23F24F05001DCCDB /* LabelValueRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelValueRowView.swift; sourceTree = "<group>"; };
+		5A2F7A4323F3785F001DCCDB /* NetworkActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkActivityModel.swift; sourceTree = "<group>"; };
+		5A2F7A4523F385CF001DCCDB /* Wake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wake.swift; sourceTree = "<group>"; };
+		5A4CB7EF24146EA200C2C191 /* VehiclesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewModel.swift; sourceTree = "<group>"; };
+		5A4CB7F12414724200C2C191 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5A4CB7F32415473600C2C191 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		5A503887240DF39D00A1E807 /* NavigationButtonLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonLink.swift; sourceTree = "<group>"; };
+		5A50388A240F085B00A1E807 /* ChangeAppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconView.swift; sourceTree = "<group>"; };
+		5A50388C240F086900A1E807 /* ChangeAppIconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconModel.swift; sourceTree = "<group>"; };
+		5A50388E240F11B900A1E807 /* ChangeAppIconRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconRowView.swift; sourceTree = "<group>"; };
+		5A503894240F3D8200A1E807 /* AppIcon2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon2@3x.png"; sourceTree = "<group>"; };
+		5A503895240F3D8200A1E807 /* AppIcon2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon2@2x.png"; sourceTree = "<group>"; };
+		5A503899240F4C6200A1E807 /* AppIconButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconButtonView.swift; sourceTree = "<group>"; };
+		5A50389B240F4CEB00A1E807 /* AppIconItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconItem.swift; sourceTree = "<group>"; };
+		5A50389D240FFCBE00A1E807 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		5A5E331C24004AB600710C96 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		5A6B10C623ECC844004A6F4D /* Controls for Tesla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Controls for Tesla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6B10CC23ECC844004A6F4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5A6B10CE23ECC849004A6F4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A6B10D023ECC849004A6F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A6B10D523ECC84A004A6F4D /* Controls for Tesla WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Controls for Tesla WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A6B10DA23ECC84A004A6F4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5A6B10DC23ECC84A004A6F4D /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		5A6B10DE23ECC84A004A6F4D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5A6B10E023ECC84A004A6F4D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5A6B10E223ECC84A004A6F4D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		5A6B10E423ECC84A004A6F4D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5A6B10E623ECC84A004A6F4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A6B10E923ECC84A004A6F4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A6B10EB23ECC84A004A6F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A6B10EC23ECC84A004A6F4D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5A6B10FB23ECCD63004A6F4D /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		5A6B10FC23ECCD63004A6F4D /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		5A6B110423ECCF8A004A6F4D /* TeslaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeslaAPI.swift; sourceTree = "<group>"; };
+		5A6B110A23ECCF9A004A6F4D /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		5A6B110B23ECCF9A004A6F4D /* OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
+		5A6B110C23ECCF9A004A6F4D /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		5A6B111123ECD131004A6F4D /* SecureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureData.swift; sourceTree = "<group>"; };
+		5A6B111323ECDAA6004A6F4D /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		5A6B111823ECDD61004A6F4D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5A6B111A23ECDE8E004A6F4D /* VehiclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesView.swift; sourceTree = "<group>"; };
+		5A6B111C23ECE531004A6F4D /* VehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleView.swift; sourceTree = "<group>"; };
+		5A6B111E23ECE55E004A6F4D /* VehicleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRowView.swift; sourceTree = "<group>"; };
+		5A6B112023ECF5A6004A6F4D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		5A6B112223EE51A3004A6F4D /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		5A6B112B23EF053D004A6F4D /* VehiclesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesList.swift; sourceTree = "<group>"; };
+		5A6B113223EF0698004A6F4D /* VehicleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleData.swift; sourceTree = "<group>"; };
+		5A6B113523EF3F9C004A6F4D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		5A6B113823EF412D004A6F4D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		5A6B113A23EF4157004A6F4D /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		5A6B113C23EF4241004A6F4D /* Vehicle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+Extensions.swift"; sourceTree = "<group>"; };
+		5A6B114223EF6B02004A6F4D /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		5A6B114523F04932004A6F4D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5A6B114823F075C1004A6F4D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5A6B114A23F088C1004A6F4D /* Logout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
+		5A6B114C23F08B31004A6F4D /* HttpStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpStatus.swift; sourceTree = "<group>"; };
+		5A6B114F23F0AD3F004A6F4D /* HVACView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVACView.swift; sourceTree = "<group>"; };
+		5A6B115123F0BEA0004A6F4D /* HVACViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVACViewModel.swift; sourceTree = "<group>"; };
+		5A6B115323F0D0AA004A6F4D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		5A6C0B372406024F0091D16A /* ControlButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonView.swift; sourceTree = "<group>"; };
+		5A6C92A924045DB100151CE4 /* AddLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLines.swift; sourceTree = "<group>"; };
+		5A864CF423FADCF100B7B955 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		5AA5730F23F1D2A4000BBF85 /* Controls for Tesla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Controls for Tesla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA5731123F1D2A4000BBF85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5AA5731323F1D2A4000BBF85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5AA5731523F1D2A4000BBF85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5AA5731723F1D2A8000BBF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AA5731A23F1D2A8000BBF85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5AA5731D23F1D2A8000BBF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5AA5731F23F1D2A8000BBF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA5732423F1D2A8000BBF85 /* Controls for Tesla Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Controls for Tesla Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA5732823F1D2A8000BBF85 /* Key_for_Tesla_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key_for_Tesla_Tests.swift; sourceTree = "<group>"; };
+		5AA5732A23F1D2A8000BBF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA5732F23F1D2A8000BBF85 /* Controls for Tesla UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Controls for Tesla UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA5733323F1D2A8000BBF85 /* Key_for_Tesla_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key_for_Tesla_UITests.swift; sourceTree = "<group>"; };
+		5AA5733523F1D2A8000BBF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA6774C23FF1A0B00F19CFF /* ControlButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonView.swift; sourceTree = "<group>"; };
+		5AA6774E23FF205C00F19CFF /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		5AC2968023FD8F41000961D4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		5AC2968323FDA60B000961D4 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		5ADA610623FAEA86006BEBBE /* Trunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trunk.swift; sourceTree = "<group>"; };
+		5ADA610F23FB4762006BEBBE /* VehicleStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleStateView.swift; sourceTree = "<group>"; };
+		5ADA611223FB4CDA006BEBBE /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		5AE2554B2411260100E0F510 /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		5AE2554C2411562B00E0F510 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A6B10D223ECC84A004A6F4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA5730C23F1D2A4000BBF85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA5732123F1D2A8000BBF85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA5732C23F1D2A8000BBF85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3567D605E7B194CC587A9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A2F7A2123F22635001DCCDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A53D27523FDCAAF0021DB9E /* LoginView */,
+				5AC2968023FD8F41000961D4 /* OnboardingView.swift */,
+				5AC2968223FDA5FA000961D4 /* ContentView */,
+				5A2F7A2423F22644001DCCDB /* VehicleView */,
+				5A2F7A2323F2263E001DCCDB /* LoadingView */,
+				5A2F7A2223F22638001DCCDB /* SettingsView */,
+				5A4CB7EE24146E9200C2C191 /* VehiclesView */,
+				5A2F7A3C23F2367A001DCCDB /* VehicleRowView.swift */,
+				5A2F7A3E23F24F05001DCCDB /* LabelValueRowView.swift */,
+				5A503887240DF39D00A1E807 /* NavigationButtonLink.swift */,
+				5A50389D240FFCBE00A1E807 /* Icon.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A2F7A2223F22638001DCCDB /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				5A503889240F084900A1E807 /* Change Icon */,
+				5A2F7A2623F22692001DCCDB /* SettingsView.swift */,
+				5A2F7A2823F2269B001DCCDB /* SettingsViewModel.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		5A2F7A2323F2263E001DCCDB /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				5A2F7A2A23F226A6001DCCDB /* LoadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		5A2F7A2423F22644001DCCDB /* VehicleView */ = {
+			isa = PBXGroup;
+			children = (
+				5A2F7A2523F2264A001DCCDB /* HVACView */,
+				5A2F7A2C23F226B8001DCCDB /* VehicleView.swift */,
+				5AA6774C23FF1A0B00F19CFF /* ControlButtonView.swift */,
+				5AA6774E23FF205C00F19CFF /* SectionHeaderView.swift */,
+			);
+			path = VehicleView;
+			sourceTree = "<group>";
+		};
+		5A2F7A2523F2264A001DCCDB /* HVACView */ = {
+			isa = PBXGroup;
+			children = (
+				5A2F7A3023F226CE001DCCDB /* HVACView.swift */,
+				5A2F7A3223F226D8001DCCDB /* HVACViewModel.swift */,
+			);
+			path = HVACView;
+			sourceTree = "<group>";
+		};
+		5A2F7A3823F227C5001DCCDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A2F7A3923F227CD001DCCDB /* AuthState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A2F7A4223F37842001DCCDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A2F7A4323F3785F001DCCDB /* NetworkActivityModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A4CB7EE24146E9200C2C191 /* VehiclesView */ = {
+			isa = PBXGroup;
+			children = (
+				5A2F7A3623F22705001DCCDB /* VehiclesView.swift */,
+			);
+			path = VehiclesView;
+			sourceTree = "<group>";
+		};
+		5A4CB7F724168C8600C2C191 /* Shared View Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A2F7A2E23F226C2001DCCDB /* VehicleViewModel.swift */,
+				5A4CB7EF24146EA200C2C191 /* VehiclesViewModel.swift */,
+			);
+			path = "Shared View Models";
+			sourceTree = "<group>";
+		};
+		5A503889240F084900A1E807 /* Change Icon */ = {
+			isa = PBXGroup;
+			children = (
+				5A50388A240F085B00A1E807 /* ChangeAppIconView.swift */,
+				5A50388C240F086900A1E807 /* ChangeAppIconModel.swift */,
+				5A50388E240F11B900A1E807 /* ChangeAppIconRowView.swift */,
+				5A503899240F4C6200A1E807 /* AppIconButtonView.swift */,
+				5A50389B240F4CEB00A1E807 /* AppIconItem.swift */,
+			);
+			path = "Change Icon";
+			sourceTree = "<group>";
+		};
+		5A503898240F405800A1E807 /* AlternateAppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				5A503895240F3D8200A1E807 /* AppIcon2@2x.png */,
+				5A503894240F3D8200A1E807 /* AppIcon2@3x.png */,
+			);
+			path = AlternateAppIcon;
+			sourceTree = "<group>";
+		};
+		5A53D27523FDCAAF0021DB9E /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				5A2F7A3423F226F8001DCCDB /* LoginView.swift */,
+				5A4CB7F12414724200C2C191 /* LoginViewModel.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		5A6B10BB23ECC844004A6F4D = {
+			isa = PBXGroup;
+			children = (
+				5A4CB7F724168C8600C2C191 /* Shared View Models */,
+				5AA5731023F1D2A4000BBF85 /* Controls for Tesla */,
+				5A6B10CA23ECC844004A6F4D /* Controls for Tesla WatchKit App */,
+				5A6B10D923ECC84A004A6F4D /* Controls for Tesla WatchKit Extension */,
+				5A864CF323FADCD900B7B955 /* Extensions */,
+				5A6B10FA23ECC8BD004A6F4D /* Network */,
+				5A6B113723EF411E004A6F4D /* CoreData */,
+				5A6B10FF23ECCD6F004A6F4D /* KeychainWrapper */,
+				5AA5732723F1D2A8000BBF85 /* Key for TeslaTests */,
+				5AA5733223F1D2A8000BBF85 /* Key for TeslaUITests */,
+				5A6B10C323ECC844004A6F4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A6B10C323ECC844004A6F4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B10C623ECC844004A6F4D /* Controls for Tesla.app */,
+				5A6B10D523ECC84A004A6F4D /* Controls for Tesla WatchKit Extension.appex */,
+				5AA5730F23F1D2A4000BBF85 /* Controls for Tesla.app */,
+				5AA5732423F1D2A8000BBF85 /* Controls for Tesla Tests.xctest */,
+				5AA5732F23F1D2A8000BBF85 /* Controls for Tesla UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A6B10CA23ECC844004A6F4D /* Controls for Tesla WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B10CB23ECC844004A6F4D /* Interface.storyboard */,
+				5A6B10CE23ECC849004A6F4D /* Assets.xcassets */,
+				5A6B10D023ECC849004A6F4D /* Info.plist */,
+			);
+			path = "Controls for Tesla WatchKit App";
+			sourceTree = "<group>";
+		};
+		5A6B10D923ECC84A004A6F4D /* Controls for Tesla WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5A2F7A3823F227C5001DCCDB /* Model */,
+				5A6B111523ECDD44004A6F4D /* Views */,
+				5A6B10DC23ECC84A004A6F4D /* HostingController.swift */,
+				5A6B10DE23ECC84A004A6F4D /* ExtensionDelegate.swift */,
+				5A6B10E023ECC84A004A6F4D /* NotificationController.swift */,
+				5A6B10E223ECC84A004A6F4D /* NotificationView.swift */,
+				5A6B10E423ECC84A004A6F4D /* ComplicationController.swift */,
+				5A6B10E623ECC84A004A6F4D /* Assets.xcassets */,
+				5A6B10EB23ECC84A004A6F4D /* Info.plist */,
+				5A6B10EC23ECC84A004A6F4D /* PushNotificationPayload.apns */,
+				5A6B10E823ECC84A004A6F4D /* Preview Content */,
+				5A6B111323ECDAA6004A6F4D /* Debug.swift */,
+			);
+			path = "Controls for Tesla WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5A6B10E823ECC84A004A6F4D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B10E923ECC84A004A6F4D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A6B10FA23ECC8BD004A6F4D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B112923EF0518004A6F4D /* ServiceCalls */,
+				5A6B111023ECD126004A6F4D /* SecureData */,
+				5A6B110223ECCF78004A6F4D /* Tesla API */,
+				5A6B114C23F08B31004A6F4D /* HttpStatus.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5A6B10FF23ECCD6F004A6F4D /* KeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B10FB23ECCD63004A6F4D /* KeychainItemAccessibility.swift */,
+				5A6B10FC23ECCD63004A6F4D /* KeychainWrapper.swift */,
+			);
+			path = KeychainWrapper;
+			sourceTree = "<group>";
+		};
+		5A6B110223ECCF78004A6F4D /* Tesla API */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B110923ECCF8E004A6F4D /* Codable */,
+				5A6B110423ECCF8A004A6F4D /* TeslaAPI.swift */,
+				5A6B112023ECF5A6004A6F4D /* NetworkService.swift */,
+			);
+			path = "Tesla API";
+			sourceTree = "<group>";
+		};
+		5A6B110923ECCF8E004A6F4D /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B110C23ECCF9A004A6F4D /* NetworkRequest.swift */,
+				5A6B110A23ECCF9A004A6F4D /* NetworkResponse.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		5A6B111023ECD126004A6F4D /* SecureData */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B111123ECD131004A6F4D /* SecureData.swift */,
+			);
+			path = SecureData;
+			sourceTree = "<group>";
+		};
+		5A6B111523ECDD44004A6F4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B114723F075B5004A6F4D /* SettingsView */,
+				5A6B114423F04918004A6F4D /* LoadingView */,
+				5A6B10DA23ECC84A004A6F4D /* ContentView.swift */,
+				5A6B111823ECDD61004A6F4D /* LoginView.swift */,
+				5A6B111A23ECDE8E004A6F4D /* VehiclesView.swift */,
+				5A6B112623EE6467004A6F4D /* VehicleView */,
+				5A6B111E23ECE55E004A6F4D /* VehicleRowView.swift */,
+				5A6B112223EE51A3004A6F4D /* Vehicle.swift */,
+				5A6C0B372406024F0091D16A /* ControlButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A6B112623EE6467004A6F4D /* VehicleView */ = {
+			isa = PBXGroup;
+			children = (
+				5ADA610E23FB4749006BEBBE /* VehicleStateView */,
+				5A6B111C23ECE531004A6F4D /* VehicleView.swift */,
+				5A6B114E23F0AD30004A6F4D /* HVACView */,
+			);
+			path = VehicleView;
+			sourceTree = "<group>";
+		};
+		5A6B112923EF0518004A6F4D /* ServiceCalls */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B112B23EF053D004A6F4D /* VehiclesList.swift */,
+				5A6B110B23ECCF9A004A6F4D /* OAuth.swift */,
+				5A6B113223EF0698004A6F4D /* VehicleData.swift */,
+				5A6B114223EF6B02004A6F4D /* Command.swift */,
+				5A6B114A23F088C1004A6F4D /* Logout.swift */,
+				5A2F7A4523F385CF001DCCDB /* Wake.swift */,
+				5ADA610623FAEA86006BEBBE /* Trunk.swift */,
+			);
+			path = ServiceCalls;
+			sourceTree = "<group>";
+		};
+		5A6B113723EF411E004A6F4D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B113423EF3F9C004A6F4D /* Model.xcdatamodeld */,
+				5A6B113823EF412D004A6F4D /* CoreDataManager.swift */,
+				5A6B113A23EF4157004A6F4D /* CoreDataHelper.swift */,
+				5A6B113C23EF4241004A6F4D /* Vehicle+Extensions.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		5A6B114423F04918004A6F4D /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B114523F04932004A6F4D /* LoadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		5A6B114723F075B5004A6F4D /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B114823F075C1004A6F4D /* SettingsView.swift */,
+				5A6B115323F0D0AA004A6F4D /* SettingsViewModel.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		5A6B114E23F0AD30004A6F4D /* HVACView */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B114F23F0AD3F004A6F4D /* HVACView.swift */,
+				5A6B115123F0BEA0004A6F4D /* HVACViewModel.swift */,
+			);
+			path = HVACView;
+			sourceTree = "<group>";
+		};
+		5A864CF323FADCD900B7B955 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A864CF423FADCF100B7B955 /* Date+Extensions.swift */,
+				5ADA611223FB4CDA006BEBBE /* Color+Extensions.swift */,
+				5A6C92A924045DB100151CE4 /* AddLines.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5AA5731023F1D2A4000BBF85 /* Controls for Tesla */ = {
+			isa = PBXGroup;
+			children = (
+				5A503898240F405800A1E807 /* AlternateAppIcon */,
+				5A2F7A4223F37842001DCCDB /* Models */,
+				5A2F7A2123F22635001DCCDB /* Views */,
+				5AA5731123F1D2A4000BBF85 /* AppDelegate.swift */,
+				5AA5731323F1D2A4000BBF85 /* SceneDelegate.swift */,
+				5AA5731723F1D2A8000BBF85 /* Assets.xcassets */,
+				5A5E331C24004AB600710C96 /* Colors.xcassets */,
+				5AA5731C23F1D2A8000BBF85 /* LaunchScreen.storyboard */,
+				5AA5731F23F1D2A8000BBF85 /* Info.plist */,
+				5AA5731923F1D2A8000BBF85 /* Preview Content */,
+			);
+			path = "Controls for Tesla";
+			sourceTree = "<group>";
+		};
+		5AA5731923F1D2A8000BBF85 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5731A23F1D2A8000BBF85 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5AA5732723F1D2A8000BBF85 /* Key for TeslaTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5732823F1D2A8000BBF85 /* Key_for_Tesla_Tests.swift */,
+				5AA5732A23F1D2A8000BBF85 /* Info.plist */,
+				5A4CB7F32415473600C2C191 /* NetworkTests.swift */,
+			);
+			path = "Key for TeslaTests";
+			sourceTree = "<group>";
+		};
+		5AA5733223F1D2A8000BBF85 /* Key for TeslaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5733323F1D2A8000BBF85 /* Key_for_Tesla_UITests.swift */,
+				5AA5733523F1D2A8000BBF85 /* Info.plist */,
+				5AE2554C2411562B00E0F510 /* LoginTests.swift */,
+			);
+			path = "Key for TeslaUITests";
+			sourceTree = "<group>";
+		};
+		5AC2968223FDA5FA000961D4 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5731523F1D2A4000BBF85 /* ContentView.swift */,
+				5AC2968323FDA60B000961D4 /* ContentViewModel.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		5ADA610E23FB4749006BEBBE /* VehicleStateView */ = {
+			isa = PBXGroup;
+			children = (
+				5ADA610F23FB4762006BEBBE /* VehicleStateView.swift */,
+			);
+			path = VehicleStateView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A6B10C523ECC844004A6F4D /* Controls for Tesla WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A6B10F323ECC84A004A6F4D /* Build configuration list for PBXNativeTarget "Controls for Tesla WatchKit App" */;
+			buildPhases = (
+				5A6B10C423ECC844004A6F4D /* Resources */,
+				5A6B10F223ECC84A004A6F4D /* Embed App Extensions */,
+				B3567D605E7B194CC587A9B8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A6B10D823ECC84A004A6F4D /* PBXTargetDependency */,
+			);
+			name = "Controls for Tesla WatchKit App";
+			productName = "Key for Tesla WatchKit App";
+			productReference = 5A6B10C623ECC844004A6F4D /* Controls for Tesla.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5A6B10D423ECC84A004A6F4D /* Controls for Tesla WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A6B10EF23ECC84A004A6F4D /* Build configuration list for PBXNativeTarget "Controls for Tesla WatchKit Extension" */;
+			buildPhases = (
+				5A6B10D123ECC84A004A6F4D /* Sources */,
+				5A6B10D223ECC84A004A6F4D /* Frameworks */,
+				5A6B10D323ECC84A004A6F4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Controls for Tesla WatchKit Extension";
+			productName = "Key for Tesla WatchKit Extension";
+			productReference = 5A6B10D523ECC84A004A6F4D /* Controls for Tesla WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		5AA5730E23F1D2A4000BBF85 /* Controls for Tesla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA5733623F1D2A8000BBF85 /* Build configuration list for PBXNativeTarget "Controls for Tesla" */;
+			buildPhases = (
+				5AA5730B23F1D2A4000BBF85 /* Sources */,
+				5AA5730C23F1D2A4000BBF85 /* Frameworks */,
+				5AA5730D23F1D2A4000BBF85 /* Resources */,
+				5A2F7A4B23F38FFA001DCCDB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A2F7A4A23F38FFA001DCCDB /* PBXTargetDependency */,
+			);
+			name = "Controls for Tesla";
+			productName = "Key for Tesla Purchases";
+			productReference = 5AA5730F23F1D2A4000BBF85 /* Controls for Tesla.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AA5732323F1D2A8000BBF85 /* Controls for Tesla Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA5733923F1D2A8000BBF85 /* Build configuration list for PBXNativeTarget "Controls for Tesla Tests" */;
+			buildPhases = (
+				5AA5732023F1D2A8000BBF85 /* Sources */,
+				5AA5732123F1D2A8000BBF85 /* Frameworks */,
+				5AA5732223F1D2A8000BBF85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AA5732623F1D2A8000BBF85 /* PBXTargetDependency */,
+			);
+			name = "Controls for Tesla Tests";
+			productName = "Key for Tesla PurchasesTests";
+			productReference = 5AA5732423F1D2A8000BBF85 /* Controls for Tesla Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5AA5732E23F1D2A8000BBF85 /* Controls for Tesla UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA5733C23F1D2A8000BBF85 /* Build configuration list for PBXNativeTarget "Controls for Tesla UITests" */;
+			buildPhases = (
+				5AA5732B23F1D2A8000BBF85 /* Sources */,
+				5AA5732C23F1D2A8000BBF85 /* Frameworks */,
+				5AA5732D23F1D2A8000BBF85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AA5733123F1D2A8000BBF85 /* PBXTargetDependency */,
+			);
+			name = "Controls for Tesla UITests";
+			productName = "Key for Tesla PurchasesUITests";
+			productReference = 5AA5732F23F1D2A8000BBF85 /* Controls for Tesla UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A6B10BC23ECC844004A6F4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Luke Allen";
+				TargetAttributes = {
+					5A6B10C523ECC844004A6F4D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					5A6B10D423ECC84A004A6F4D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					5AA5730E23F1D2A4000BBF85 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					5AA5732323F1D2A8000BBF85 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5AA5730E23F1D2A4000BBF85;
+					};
+					5AA5732E23F1D2A8000BBF85 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5AA5730E23F1D2A4000BBF85;
+					};
+				};
+			};
+			buildConfigurationList = 5A6B10BF23ECC844004A6F4D /* Build configuration list for PBXProject "Controls for Tesla" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A6B10BB23ECC844004A6F4D;
+			productRefGroup = 5A6B10C323ECC844004A6F4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A6B10C523ECC844004A6F4D /* Controls for Tesla WatchKit App */,
+				5A6B10D423ECC84A004A6F4D /* Controls for Tesla WatchKit Extension */,
+				5AA5730E23F1D2A4000BBF85 /* Controls for Tesla */,
+				5AA5732323F1D2A8000BBF85 /* Controls for Tesla Tests */,
+				5AA5732E23F1D2A8000BBF85 /* Controls for Tesla UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A6B10C423ECC844004A6F4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6B10CF23ECC849004A6F4D /* Assets.xcassets in Resources */,
+				5A6B10CD23ECC844004A6F4D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A6B10D323ECC84A004A6F4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6B10EA23ECC84A004A6F4D /* Preview Assets.xcassets in Resources */,
+				5A5E331D24004AB600710C96 /* Colors.xcassets in Resources */,
+				5ADA610D23FB07AE006BEBBE /* Assets.xcassets in Resources */,
+				5A6B10E723ECC84A004A6F4D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA5730D23F1D2A4000BBF85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A503896240F3D8200A1E807 /* AppIcon2@3x.png in Resources */,
+				5AA5731E23F1D2A8000BBF85 /* LaunchScreen.storyboard in Resources */,
+				5A5E331E24004AB600710C96 /* Colors.xcassets in Resources */,
+				5AA5731B23F1D2A8000BBF85 /* Preview Assets.xcassets in Resources */,
+				5A503897240F3D8200A1E807 /* AppIcon2@2x.png in Resources */,
+				5AA5731823F1D2A8000BBF85 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA5732223F1D2A8000BBF85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA5732D23F1D2A8000BBF85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A6B10D123ECC84A004A6F4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADA610723FAEA86006BEBBE /* Trunk.swift in Sources */,
+				5A6B114923F075C1004A6F4D /* SettingsView.swift in Sources */,
+				5A2F7A4623F385CF001DCCDB /* Wake.swift in Sources */,
+				5A6B110F23ECCF9A004A6F4D /* NetworkRequest.swift in Sources */,
+				5ADA610C23FB0110006BEBBE /* LabelValueRowView.swift in Sources */,
+				5A6B115023F0AD3F004A6F4D /* HVACView.swift in Sources */,
+				5A6B110723ECCF8A004A6F4D /* TeslaAPI.swift in Sources */,
+				5A6B113B23EF4157004A6F4D /* CoreDataHelper.swift in Sources */,
+				5A6B10DD23ECC84A004A6F4D /* HostingController.swift in Sources */,
+				5ADA610923FAF506006BEBBE /* VehicleViewModel.swift in Sources */,
+				5ADA610A23FAF616006BEBBE /* NetworkActivityModel.swift in Sources */,
+				5A6C0B382406024F0091D16A /* ControlButtonView.swift in Sources */,
+				5ADA611323FB4CDA006BEBBE /* Color+Extensions.swift in Sources */,
+				5A6B115423F0D0AA004A6F4D /* SettingsViewModel.swift in Sources */,
+				5A6B10DB23ECC84A004A6F4D /* ContentView.swift in Sources */,
+				5A6B113623EF3F9C004A6F4D /* Model.xcdatamodeld in Sources */,
+				5A6B10E123ECC84A004A6F4D /* NotificationController.swift in Sources */,
+				5A6B113D23EF4241004A6F4D /* Vehicle+Extensions.swift in Sources */,
+				5A6B10DF23ECC84A004A6F4D /* ExtensionDelegate.swift in Sources */,
+				5A6B114B23F088C1004A6F4D /* Logout.swift in Sources */,
+				5A6B111F23ECE55E004A6F4D /* VehicleRowView.swift in Sources */,
+				5A6B113323EF0698004A6F4D /* VehicleData.swift in Sources */,
+				5A6B110D23ECCF9A004A6F4D /* NetworkResponse.swift in Sources */,
+				5A6B10E323ECC84A004A6F4D /* NotificationView.swift in Sources */,
+				5ADA611023FB4762006BEBBE /* VehicleStateView.swift in Sources */,
+				5A6B111D23ECE531004A6F4D /* VehicleView.swift in Sources */,
+				5A6B114323EF6B02004A6F4D /* Command.swift in Sources */,
+				5A6B114623F04932004A6F4D /* LoadingView.swift in Sources */,
+				5A6B111B23ECDE8E004A6F4D /* VehiclesView.swift in Sources */,
+				5A6B112123ECF5A6004A6F4D /* NetworkService.swift in Sources */,
+				5A6B115223F0BEA0004A6F4D /* HVACViewModel.swift in Sources */,
+				5A6B111923ECDD61004A6F4D /* LoginView.swift in Sources */,
+				5A6B10FE23ECCD63004A6F4D /* KeychainWrapper.swift in Sources */,
+				5A4CB7F824168CBB00C2C191 /* VehiclesViewModel.swift in Sources */,
+				5A6B10FD23ECCD63004A6F4D /* KeychainItemAccessibility.swift in Sources */,
+				5A6B10E523ECC84A004A6F4D /* ComplicationController.swift in Sources */,
+				5A6B111423ECDAA6004A6F4D /* Debug.swift in Sources */,
+				5A6B112C23EF053D004A6F4D /* VehiclesList.swift in Sources */,
+				5ADA610B23FAF63A006BEBBE /* Date+Extensions.swift in Sources */,
+				5A6B112323EE51A3004A6F4D /* Vehicle.swift in Sources */,
+				5A6B111223ECD131004A6F4D /* SecureData.swift in Sources */,
+				5A6B113923EF412D004A6F4D /* CoreDataManager.swift in Sources */,
+				5A2F7A3A23F227CD001DCCDB /* AuthState.swift in Sources */,
+				5A6B110E23ECCF9A004A6F4D /* OAuth.swift in Sources */,
+				5A6B114D23F08B31004A6F4D /* HttpStatus.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA5730B23F1D2A4000BBF85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2F7A3523F226F8001DCCDB /* LoginView.swift in Sources */,
+				5A2F7A3D23F2367A001DCCDB /* VehicleRowView.swift in Sources */,
+				5AA5735623F1E2C8000BBF85 /* SecureData.swift in Sources */,
+				5A50389C240F4CEB00A1E807 /* AppIconItem.swift in Sources */,
+				5AA5735923F1E2C8000BBF85 /* TeslaAPI.swift in Sources */,
+				5ADA610823FAEA86006BEBBE /* Trunk.swift in Sources */,
+				5A50389A240F4C6200A1E807 /* AppIconButtonView.swift in Sources */,
+				5AA5735A23F1E2C8000BBF85 /* NetworkService.swift in Sources */,
+				5A2F7A2923F2269B001DCCDB /* SettingsViewModel.swift in Sources */,
+				5A4CB7F024146EA200C2C191 /* VehiclesViewModel.swift in Sources */,
+				5A2F7A4423F3785F001DCCDB /* NetworkActivityModel.swift in Sources */,
+				5AA5734F23F1E2C8000BBF85 /* OAuth.swift in Sources */,
+				5AA5731223F1D2A4000BBF85 /* AppDelegate.swift in Sources */,
+				5A2F7A2B23F226A6001DCCDB /* LoadingView.swift in Sources */,
+				5AA5736023F1E2E9000BBF85 /* Vehicle+Extensions.swift in Sources */,
+				5AA5736223F1E4A2000BBF85 /* Debug.swift in Sources */,
+				5A4CB7F22414724200C2C191 /* LoginViewModel.swift in Sources */,
+				5AA5735E23F1E2E9000BBF85 /* CoreDataManager.swift in Sources */,
+				5A50389E240FFCBE00A1E807 /* Icon.swift in Sources */,
+				5A50388B240F085B00A1E807 /* ChangeAppIconView.swift in Sources */,
+				5AC2968423FDA60B000961D4 /* ContentViewModel.swift in Sources */,
+				5A2F7A3123F226CE001DCCDB /* HVACView.swift in Sources */,
+				5AA5736123F1E2ED000BBF85 /* Model.xcdatamodeld in Sources */,
+				5A2F7A2D23F226B8001DCCDB /* VehicleView.swift in Sources */,
+				5ADA611423FB4CDA006BEBBE /* Color+Extensions.swift in Sources */,
+				5AC2968123FD8F41000961D4 /* OnboardingView.swift in Sources */,
+				5A50388D240F086900A1E807 /* ChangeAppIconModel.swift in Sources */,
+				5A6C92AB24045DB100151CE4 /* AddLines.swift in Sources */,
+				5AA5735D23F1E2D7000BBF85 /* KeychainWrapper.swift in Sources */,
+				5A2F7A3323F226D8001DCCDB /* HVACViewModel.swift in Sources */,
+				5AA6774D23FF1A0B00F19CFF /* ControlButtonView.swift in Sources */,
+				5A2F7A3723F22705001DCCDB /* VehiclesView.swift in Sources */,
+				5A864CF523FADCF100B7B955 /* Date+Extensions.swift in Sources */,
+				5AA5736323F1E4B8000BBF85 /* Logout.swift in Sources */,
+				5AA5731423F1D2A4000BBF85 /* SceneDelegate.swift in Sources */,
+				5A503888240DF39D00A1E807 /* NavigationButtonLink.swift in Sources */,
+				5AA5735223F1E2C8000BBF85 /* VehicleData.swift in Sources */,
+				5A50388F240F11B900A1E807 /* ChangeAppIconRowView.swift in Sources */,
+				5AA5731623F1D2A4000BBF85 /* ContentView.swift in Sources */,
+				5AA5734E23F1E2C8000BBF85 /* VehiclesList.swift in Sources */,
+				5AA5735523F1E2C8000BBF85 /* Command.swift in Sources */,
+				5ADA611123FB4762006BEBBE /* VehicleStateView.swift in Sources */,
+				5A2F7A3B23F227D5001DCCDB /* AuthState.swift in Sources */,
+				5A2F7A3F23F24F05001DCCDB /* LabelValueRowView.swift in Sources */,
+				5AA5735C23F1E2D7000BBF85 /* KeychainItemAccessibility.swift in Sources */,
+				5A2F7A4723F385D4001DCCDB /* Wake.swift in Sources */,
+				5AA5735B23F1E2C8000BBF85 /* HttpStatus.swift in Sources */,
+				5A2F7A2F23F226C2001DCCDB /* VehicleViewModel.swift in Sources */,
+				5AA5735F23F1E2E9000BBF85 /* CoreDataHelper.swift in Sources */,
+				5AA5735723F1E2C8000BBF85 /* NetworkRequest.swift in Sources */,
+				5AA6774F23FF205C00F19CFF /* SectionHeaderView.swift in Sources */,
+				5AA5735823F1E2C8000BBF85 /* NetworkResponse.swift in Sources */,
+				5A2F7A2723F22692001DCCDB /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA5732023F1D2A8000BBF85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4CB7F42415473600C2C191 /* NetworkTests.swift in Sources */,
+				5AA5732923F1D2A8000BBF85 /* Key_for_Tesla_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA5732B23F1D2A8000BBF85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA5733423F1D2A8000BBF85 /* Key_for_Tesla_UITests.swift in Sources */,
+				5AE2554F241176AD00E0F510 /* LoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A2F7A4A23F38FFA001DCCDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A6B10C523ECC844004A6F4D /* Controls for Tesla WatchKit App */;
+			targetProxy = 5A2F7A4923F38FFA001DCCDB /* PBXContainerItemProxy */;
+		};
+		5A6B10D823ECC84A004A6F4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A6B10D423ECC84A004A6F4D /* Controls for Tesla WatchKit Extension */;
+			targetProxy = 5A6B10D723ECC84A004A6F4D /* PBXContainerItemProxy */;
+		};
+		5AA5732623F1D2A8000BBF85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA5730E23F1D2A4000BBF85 /* Controls for Tesla */;
+			targetProxy = 5AA5732523F1D2A8000BBF85 /* PBXContainerItemProxy */;
+		};
+		5AA5733123F1D2A8000BBF85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA5730E23F1D2A4000BBF85 /* Controls for Tesla */;
+			targetProxy = 5AA5733023F1D2A8000BBF85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A6B10CB23ECC844004A6F4D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A6B10CC23ECC844004A6F4D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		5AA5731C23F1D2A8000BBF85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AA5731D23F1D2A8000BBF85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A6B10ED23ECC84A004A6F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A6B10EE23ECC84A004A6F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A6B10F023ECC84A004A6F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_ASSET_PATHS = "\"Controls for Tesla WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = Z56E8M84Z6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Controls for Tesla WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSLuke.Controls.For.Tesla.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		5A6B10F123ECC84A004A6F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_ASSET_PATHS = "\"Controls for Tesla WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = Z56E8M84Z6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Controls for Tesla WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSLuke.Controls.For.Tesla.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		5A6B10F423ECC84A004A6F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = Z56E8M84Z6;
+				IBSC_MODULE = Key_for_Tesla_WatchKit_Extension;
+				INFOPLIST_FILE = "Controls for Tesla WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSLuke.Controls.For.Tesla.watchkitapp;
+				PRODUCT_NAME = "Controls for Tesla";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		5A6B10F523ECC84A004A6F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = Z56E8M84Z6;
+				IBSC_MODULE = Key_for_Tesla_WatchKit_Extension;
+				INFOPLIST_FILE = "Controls for Tesla WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSLuke.Controls.For.Tesla.watchkitapp;
+				PRODUCT_NAME = "Controls for Tesla";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		5AA5733723F1D2A8000BBF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_ASSET_PATHS = "\"Controls for Tesla/Preview Content\"";
+				DEVELOPMENT_TEAM = Z56E8M84Z6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Controls for Tesla/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSLuke.Controls.For.Tesla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5AA5733823F1D2A8000BBF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_ASSET_PATHS = "\"Controls for Tesla/Preview Content\"";
+				DEVELOPMENT_TEAM = Z56E8M84Z6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Controls for Tesla/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iOSLuke.Controls.For.Tesla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5AA5733A23F1D2A8000BBF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z56E8M84Z6;
+				INFOPLIST_FILE = "Key for TeslaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iOSLuke.Key-for-TeslaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Controls for Tesla.app/Controls for Tesla";
+			};
+			name = Debug;
+		};
+		5AA5733B23F1D2A8000BBF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z56E8M84Z6;
+				INFOPLIST_FILE = "Key for TeslaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iOSLuke.Key-for-TeslaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Controls for Tesla.app/Controls for Tesla";
+			};
+			name = Release;
+		};
+		5AA5733D23F1D2A8000BBF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z56E8M84Z6;
+				INFOPLIST_FILE = "Key for TeslaUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iOSLuke.Key-for-TeslaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Controls for Tesla";
+			};
+			name = Debug;
+		};
+		5AA5733E23F1D2A8000BBF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z56E8M84Z6;
+				INFOPLIST_FILE = "Key for TeslaUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iOSLuke.Key-for-TeslaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Controls for Tesla";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A6B10BF23ECC844004A6F4D /* Build configuration list for PBXProject "Controls for Tesla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6B10ED23ECC84A004A6F4D /* Debug */,
+				5A6B10EE23ECC84A004A6F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A6B10EF23ECC84A004A6F4D /* Build configuration list for PBXNativeTarget "Controls for Tesla WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6B10F023ECC84A004A6F4D /* Debug */,
+				5A6B10F123ECC84A004A6F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A6B10F323ECC84A004A6F4D /* Build configuration list for PBXNativeTarget "Controls for Tesla WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6B10F423ECC84A004A6F4D /* Debug */,
+				5A6B10F523ECC84A004A6F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AA5733623F1D2A8000BBF85 /* Build configuration list for PBXNativeTarget "Controls for Tesla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA5733723F1D2A8000BBF85 /* Debug */,
+				5AA5733823F1D2A8000BBF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AA5733923F1D2A8000BBF85 /* Build configuration list for PBXNativeTarget "Controls for Tesla Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA5733A23F1D2A8000BBF85 /* Debug */,
+				5AA5733B23F1D2A8000BBF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AA5733C23F1D2A8000BBF85 /* Build configuration list for PBXNativeTarget "Controls for Tesla UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA5733D23F1D2A8000BBF85 /* Debug */,
+				5AA5733E23F1D2A8000BBF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5A6B113423EF3F9C004A6F4D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5AE2554B2411260100E0F510 /* Model 2.xcdatamodel */,
+				5A6B113523EF3F9C004A6F4D /* Model.xcdatamodel */,
+			);
+			currentVersion = 5AE2554B2411260100E0F510 /* Model 2.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5A6B10BC23ECC844004A6F4D /* Project object */;
+}
